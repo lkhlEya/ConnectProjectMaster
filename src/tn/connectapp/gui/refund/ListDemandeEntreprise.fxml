@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="432.0" prefWidth="1252.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ListDemandeEntrepriseController">
+   <children>
+      <TableView fx:id="tabView" layoutX="10.0" layoutY="65.0" prefHeight="358.0" prefWidth="1252.0">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="111.19998455047607" text="Date" />
+            <TableColumn fx:id="colNom" prefWidth="112.79998779296875" text="Nom" />
+            <TableColumn fx:id="colEmail" prefWidth="112.79998779296875" text="Email" />
+            <TableColumn fx:id="colVille" prefWidth="112.79998779296875" text="Ville" />
+            <TableColumn fx:id="colGSM" prefWidth="112.79998779296875" text="GSM" />
+            <TableColumn fx:id="colClub" prefWidth="103.19999694824219" text="Club" />
+          <TableColumn fx:id="colDemande" prefWidth="394.4000244140625" text="Demande" />
+            <TableColumn fx:id="colAction" minWidth="0.0" prefWidth="192.0" text="Actions" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSearch" layoutX="864.0" layoutY="26.0" minWidth="40.0" mnemonicParsing="false" onAction="#clickSearch" prefHeight="30.0" prefWidth="40.0">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/icons8_Search_52px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="editSearch" layoutX="536.0" layoutY="29.0" prefHeight="26.0" prefWidth="315.0" promptText="Chercher" />
+   </children>
+</AnchorPane>

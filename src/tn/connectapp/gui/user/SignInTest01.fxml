@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="704.0" prefWidth="1299.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.connectapp.gui.user.SignInTestController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="-3.0" prefHeight="696.0" prefWidth="1333.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane layoutX="688.0" layoutY="4.0" opacity="0.95" prefHeight="689.0" prefWidth="645.0" style="-fx-background-color: #D3D3D3;">
+               <children>
+                  <AnchorPane fx:id="PAtiltle" layoutX="14.0" layoutY="7.0" prefHeight="67.0" prefWidth="448.0" />
+                  <AnchorPane fx:id="PA1" layoutX="-56.0" layoutY="24.0" opacity="0.87" prefHeight="582.0" prefWidth="563.0" />
+                  <TextField fx:id="tfFirstName" layoutX="101.0" layoutY="95.0" opacity="0.71" prefHeight="34.0" prefWidth="282.0" promptText="Your name" />
+                  <PasswordField fx:id="tfPassword" layoutX="101.0" layoutY="264.0" prefHeight="34.0" prefWidth="282.0" promptText="New password" />
+                  <TextField fx:id="tfEmail" layoutX="101.0" layoutY="206.0" opacity="0.7" prefHeight="34.0" prefWidth="282.0" promptText="Exemple: wissal.yermani@esprit.tn" />
+                  <TextField fx:id="tfLastName" layoutX="102.0" layoutY="151.0" opacity="0.7" prefHeight="34.0" prefWidth="282.0" promptText="Family name" />
+                  <TextField fx:id="tfClub" layoutX="101.0" layoutY="390.0" prefHeight="34.0" prefWidth="282.0" promptText="Your Club" />
+                  <Label fx:id="txtGender" layoutX="111.0" layoutY="474.0" text="Gender ?">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="rbM" layoutX="286.0" layoutY="474.0" mnemonicParsing="false" onAction="#rbmAction" text="Men">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="Gender" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rbw" layoutX="194.0" layoutY="474.0" mnemonicParsing="false" onAction="#rbwAction" text="Women" toggleGroup="$Gender" />
+                  <DatePicker fx:id="tfdate" layoutX="101.0" layoutY="327.0" opacity="0.7" prefHeight="34.0" prefWidth="282.0" promptText="Date of birth  JJ/MM/AAAA" />
+                  <Text fx:id="titleSave" fill="#003366" layoutX="54.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register now it's quick and easy" textAlignment="CENTER" wrappingWidth="350.541015625">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="43.0" layoutY="10.0" prefHeight="687.0" prefWidth="677.0">
+               <children>
+                  <ImageView fitHeight="690.0" fitWidth="661.0" layoutX="-11.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../media/signup_1.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="7.0" layoutY="449.0" prefHeight="233.0" prefWidth="351.0">
+                     <children>
+                        <ImageView fitHeight="132.0" fitWidth="352.0" layoutX="-10.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../media/greyLogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="bntCancel" layoutX="1048.0" layoutY="574.0" mnemonicParsing="false" onAction="#bActionCancel" opacity="0.83" prefHeight="34.0" prefWidth="131.0" style="-fx-background-color: #003366;" text="Cancel" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSave" layoutX="900.0" layoutY="575.0" mnemonicParsing="false" onAction="#btnAddUser" opacity="0.83" prefHeight="34.0" prefWidth="131.0" style="-fx-background-color: #003366;" text="Register now" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

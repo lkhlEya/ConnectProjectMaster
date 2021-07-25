@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.connectapp.gui.refund.AjouterRemboursementController">
+   <children>
+      <Button fx:id="save" layoutX="337.0" layoutY="483.0" mnemonicParsing="false" onAction="#ajouterDemande" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: #1a6aeb;" text="Ajouter" />
+      <Label layoutX="62.0" layoutY="34.0" text="Nom" textFill="#efecec" />
+      <Label layoutX="61.0" layoutY="76.0" text="Club" textFill="#efecec" />
+      <Label layoutX="59.0" layoutY="117.0" text="Email" textFill="#efecec" />
+      <Label layoutX="59.0" layoutY="156.0" text="Ville" textFill="#efecec" />
+      <Label layoutX="57.0" layoutY="194.0" text="GSM" textFill="#efecec" />
+      <Label layoutX="56.0" layoutY="227.0" text="Demande" textFill="#efecec" />
+      <TextField fx:id="Tnom" layoutX="139.0" layoutY="31.0" prefHeight="26.0" prefWidth="324.0" promptText="Nom" />
+      <TextField fx:id="Tclub" layoutX="139.0" layoutY="73.0" prefHeight="26.0" prefWidth="324.0" promptText="Club" />
+      <TextField fx:id="Temail" layoutX="139.0" layoutY="116.0" prefHeight="26.0" prefWidth="324.0" promptText="Email" />
+      <TextField fx:id="Tville" layoutX="139.0" layoutY="161.0" prefHeight="26.0" prefWidth="324.0" promptText="Ville" />
+      <TextField fx:id="Ttelephone" layoutX="139.0" layoutY="199.0" prefHeight="26.0" prefWidth="324.0" promptText="GSM" />
+      <TextArea fx:id="Tdemande" layoutX="141.0" layoutY="245.0" prefHeight="200.0" prefWidth="324.0" promptText="Demande" />
+      <Button fx:id="btnCancel" layoutX="184.0" layoutY="483.0" mnemonicParsing="false" onAction="#clear" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #1a6aeb;" text="Annuler" />
+   </children>
+</AnchorPane>

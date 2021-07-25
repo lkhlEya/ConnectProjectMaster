@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="carre" minWidth="-Infinity" opacity="0.84" prefHeight="802.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.connectapp.gui.user.SignInController">
+   <children>
+      <AnchorPane fx:id="AP1" layoutX="80.0" layoutY="14.0" prefHeight="788.0" prefWidth="944.0" />
+      <Rectangle fx:id="Rect1" arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="746.0" layoutX="137.0" layoutY="22.0" opacity="0.05" smooth="false" stroke="BLACK" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="906.0" />
+      <Rectangle fx:id="FormLog" arcHeight="5.0" arcWidth="5.0" height="478.0" layoutX="177.0" layoutY="159.0" opacity="0.51" stroke="WHITE" strokeLineJoin="ROUND" strokeType="OUTSIDE" width="668.0">
+         <fill>
+            <LinearGradient endX="0.42857142857142855" endY="0.48571428571428577" startX="0.6904761904761905" startY="0.5428571428571429">
+               <stops>
+                  <Stop color="#00000030" />
+                  <Stop color="#fffcfc" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Pane fx:id="pane2" focusTraversable="true" layoutX="209.0" layoutY="154.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="680.0">
+         <children>
+            <Label fx:id="textEmail" layoutX="71.0" layoutY="147.0" text="Email">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label fx:id="textPassWord" layoutX="70.0" layoutY="232.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Text fx:id="titleLogIn" layoutX="25.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log inKeep abreast of developments in your professional world" wrappingWidth="542.265625">
+               <font>
+                  <Font name="System Bold Italic" size="27.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TFEmail" layoutX="170.0" layoutY="140.0" prefHeight="49.0" prefWidth="301.0" promptText="E-mail/ User Name">
+               <font>
+                  <Font size="16.0" />
+               </font></TextField>
+            <Hyperlink fx:id="hlForgotPassword" layoutX="254.0" layoutY="291.0" onAction="#HLForgotPW" text="Forgot your password ?">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="btnLog" layoutX="214.0" layoutY="338.0" mnemonicParsing="false" onAction="#ButtonLogIn" prefHeight="56.0" prefWidth="223.0" style="-fx-background-color: #003366;" text="LogIn" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="tfPassword" layoutX="172.0" layoutY="216.0" prefHeight="49.0" prefWidth="301.0" promptText="Your Password">
+               <font>
+                  <Font size="16.0" />
+               </font></PasswordField>
+         </children>
+         <padding>
+            <Insets right="20.0" top="20.0" />
+         </padding>
+      </Pane>
+      <AnchorPane fx:id="APLogo" layoutX="48.0" layoutY="10.0" prefHeight="167.0" prefWidth="1006.0">
+         <children>
+            <ImageView fx:id="logoLgIn" fitHeight="124.0" fitWidth="435.0" layoutX="111.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../media/BluesGreyGradient.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnFermer" layoutX="959.0" layoutY="26.0" mnemonicParsing="false" onAction="#ActionFermer" prefHeight="2.0" prefWidth="7.0" style="-fx-background-color: #003366;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

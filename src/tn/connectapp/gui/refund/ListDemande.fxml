@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="content" prefHeight="400.0" prefWidth="937.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.connectapp.gui.refund.ListDemandeController">
+   <children>
+      <TableView fx:id="tabView" layoutX="10.0" layoutY="14.0" prefHeight="378.0" prefWidth="917.0" style="-fx-background-radius: 20;">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="119.99996662139893" style="-fx-background-radius: 10; -fx-background-color: #135478;" text="Date" />
+          <TableColumn fx:id="colDemande" prefWidth="446.4000701904297" style="-fx-background-radius: 10;" text="Demande" />
+            <TableColumn fx:id="colEtat" prefWidth="155.19989013671875" style="-fx-background-radius: 10;" text="Etat" />
+            <TableColumn fx:id="colAction" prefWidth="194.39998779296877" style="-fx-background-radius: 10;" text="Actions" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

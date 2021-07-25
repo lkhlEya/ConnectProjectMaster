@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" opacity="0.91" prefHeight="750.0" prefWidth="1136.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.connectapp.gui.user.ProfileUserController">
+   <children>
+      <AnchorPane fx:id="APtitleProf" layoutX="17.0" layoutY="14.0" prefHeight="165.0" prefWidth="1107.0">
+         <children>
+            <ImageView fx:id="imgProfile" fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../media/imgUser.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="hlClub" layoutX="483.0" layoutY="108.0" text="Club" />
+            <ImageView fx:id="logprofile" fitHeight="129.0" fitWidth="338.0" layoutX="770.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../media/BluesGreyGradient.png" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="hlEvent" layoutX="636.0" layoutY="106.0" prefHeight="23.0" prefWidth="83.0" text="Event" />
+            <Hyperlink fx:id="hlClaim" layoutX="569.0" layoutY="107.0" text="claim" />
+            <Hyperlink fx:id="hlHome" layoutX="396.0" layoutY="106.0" prefHeight="23.0" prefWidth="56.0" text="Home" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="APeditProf" layoutX="50.0" layoutY="167.0" opacity="0.72" prefHeight="510.0" prefWidth="272.0" style="-fx-background-color: #e4e8eb;">
+         <children>
+            <Text fx:id="fNameProf" layoutX="29.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="126.5">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+            <ImageView fx:id="iconeEdit" fitHeight="33.0" fitWidth="28.0" layoutX="158.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../media/edit.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="inserImgProf" layoutX="17.0" layoutY="44.0" mnemonicParsing="false" onAction="#buttonInsert" prefHeight="51.0" prefWidth="165.0" text="Insert image" />
+            <Button fx:id="insertCv" layoutX="23.0" layoutY="340.0" mnemonicParsing="false" onAction="#buttonInsertCV" prefHeight="55.0" prefWidth="171.0" text="Insert CV" />
+            <Hyperlink fx:id="editProf" layoutX="25.0" layoutY="265.0" onAction="#hlEdit" prefHeight="51.0" prefWidth="121.0" text="Edit Profile">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Hyperlink>
+            <Button fx:id="btnClose" layoutX="25.0" layoutY="419.0" mnemonicParsing="false" onAction="#buttonClose" prefHeight="63.0" prefWidth="169.0" text="Close" />
+         </children>
+      </AnchorPane>
+      <Text fx:id="lastNameProf" layoutX="80.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" wrappingWidth="99.892578125">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <AnchorPane fx:id="APcadre" layoutX="307.0" layoutY="170.0" prefHeight="509.0" prefWidth="612.0">
+         <children>
+            <Rectangle fx:id="cadreEdit" arcHeight="5.0" arcWidth="5.0" fill="#e4e8eb" height="513.0" layoutX="64.0" layoutY="-6.0" opacity="0.43" stroke="BLACK" strokeType="INSIDE" width="584.0" />
+            <Button fx:id="btnupdate" layoutX="433.0" layoutY="458.0" mnemonicParsing="false" onAction="#UpdateUser" prefHeight="35.0" prefWidth="75.0" text="Update" />
+            <Text fx:id="titleSave" fill="#003366" layoutX="64.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Register now it's quick and easy" textAlignment="CENTER" wrappingWidth="350.541015625">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="tfdate" layoutX="111.0" layoutY="337.0" opacity="0.7" prefHeight="34.0" prefWidth="282.0" promptText="Date of birth  JJ/MM/AAAA" />
+            <RadioButton fx:id="rbw" layoutX="204.0" layoutY="461.0" mnemonicParsing="false" onAction="#checkrbw" text="Women">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Gender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbM" layoutX="296.0" layoutY="461.0" mnemonicParsing="false" onAction="#checkrbm" text="Men" toggleGroup="$Gender" />
+            <Label fx:id="txtGender" layoutX="121.0" layoutY="461.0" text="Gender ?">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfClub" layoutX="111.0" layoutY="400.0" prefHeight="34.0" prefWidth="282.0" promptText="Your Club" />
+            <TextField fx:id="tfLastName" layoutX="112.0" layoutY="161.0" opacity="0.7" prefHeight="34.0" prefWidth="282.0" promptText="Family name" />
+            <TextField fx:id="tfEmail" layoutX="111.0" layoutY="216.0" opacity="0.7" prefHeight="34.0" prefWidth="282.0" promptText="Exemple: wissal.yermani@esprit.tn" />
+            <PasswordField fx:id="tfPassword" layoutX="111.0" layoutY="274.0" prefHeight="34.0" prefWidth="282.0" promptText="New password" />
+            <TextField fx:id="tfFirstName" layoutX="111.0" layoutY="105.0" opacity="0.71" prefHeight="34.0" prefWidth="282.0" promptText="Your name" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
