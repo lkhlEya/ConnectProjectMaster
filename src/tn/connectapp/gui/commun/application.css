@@ -1,0 +1,219 @@
+.tab-pane > .pane 
+{
+  -fx-rotate: 3; 
+  -fx-translate-y: -2; 
+  -fx-background-insets: 20 10 15 80; 
+  -fx-background-color: #000; 
+  -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 0, 15);
+  
+}
+/*
+ dropshadow(0 0 0.75 crimson)   linear-gradient(to top right #af267e ,#ff0012, #ffa600)  linear-gradient(to top right, #ff0012, #af267e);
+
+radial-gradient(focus-distance 0% , center 50% 50% , radius 55% , #87085a, #ff0012,#f5ff00);
+..\css\fullpackstyling.css
+*/
+.button 
+{
+    -fx-background-color: linear-gradient(#051232 0%, #0A255A 100%);
+    -fx-text-fill: #FFFFFF;
+
+}
+
+#filtratecanva
+{
+    -fx-background-color: linear-gradient(#051232 0%, #0A255A 100%);
+    -fx-border-color :  linear-gradient(#051232 0%, #0A255A 100%);
+    -fx-border-radius : 2em; 
+    -fx-text-fill: #FFFFFF;
+}
+
+.button:hover
+{
+        -fx-background-color: transparent;
+        -fx-border-color : #0A255A;
+        -fx-text-fill: #0A255A;
+}
+
+.button:pressed
+{
+-fx-background-color : #F49B42;
+-fx-text-fill : white;
+-fx-border-color : #F49B42;
+}
+
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {   
+    -fx-background-color: linear-gradient(#051232 0%, #0A255A 100%);
+    -fx-stroke: transparent;
+    -fx-size:70;
+    -fx-font-size : 15px;
+    -fx-alignment: CENTER ;    
+    -fx-text-alignment: center;
+    -fx-text-fill: #FFFFFF;
+
+
+}
+.table-row-cell:filled:hover {
+
+    -fx-size:50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+    -fx-text-fill: #FFFFFF;
+
+
+}
+.table-view:row-selection {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-fixed-cell-size: 50;
+    -fx-alignment: CENTER;
+    -fx-text-alignment: center;
+    -fx-text-fill: #FFFFFF;
+
+}
+
+.table-view .table-column{
+    -fx-text-alignment: center;
+    -fx-alignment: CENTER ;
+
+}
+
+
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#051232 50%, #0A255A 50%);
+        -fx-text-fill: #FFFFFF;
+
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.scroll-pane {
+    -fx-background-color:  linear-gradient(#051232 0%, #0A255A 100%);;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color:  linear-gradient(#051232 0%, #0A255A 100%);
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+
+
+
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+     -fx-tab-min-width:630px;
+  -fx-tab-max-width:630px;
+  -fx-tab-min-height:30px;
+  -fx-tab-max-height:30px;
+}
+
+#ClubData.tab-pane #eventPane.tab-pane #membersPane.tab-pane
+{
+  -fx-tab-min-width:100px;
+  -fx-tab-max-width:100px;
+  -fx-tab-min-height:30px;
+  -fx-tab-max-height:30px;
+}
+
+
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #E33155;
+
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 20px;
+}
+
+.tab:selected .tab-label { 
+    -fx-text-fill: #e6e6e6;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+ /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.416667em 0.0em 0.0em; /* overridden as 5 2 0 0 */
+}
+
+
+.menu-button {
+ -fx-background-color:#979DB1;
+
+}
+
+.menu-button .label {
+
+    -fx-text-fill: white;
+
+}
+
+.menu-item  {
+
+    -fx-background-color: white;
+  -fx-padding: 5 93 5 93;
+}
+
+.menu-item .label {
+    -fx-text-fill: #051232;
+     -fx-font-size: 22px;
+     -fx-text-alignment: right;
+
+}
+
+.menu-item:focused {
+     -fx-background-color: linear-gradient(#051232 0%, #0A255A 100%) ;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+  /*  -fx-background-insets: 0, 1, 2;
+/*    -fx-padding: 0.666667em 0.083333em 0.666667em 0.083333em;  8 1 8 1 */
+  /*  -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; /* 4 1 8 1 */ 
+}
+
