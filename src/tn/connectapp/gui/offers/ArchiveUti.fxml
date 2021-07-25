@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ArchiveUtiController">
+    <stylesheets>
+        <URL value="@archiveuti.css" />
+    </stylesheets>
+   <children>
+      <BorderPane prefHeight="507.0" prefWidth="1171.0">
+         <bottom>
+            <TableView id="ClaimsTable" fx:id="ClaimsTable" prefHeight="527.0" prefWidth="1171.0" stylesheets="@utilisateur.css" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="id" maxWidth="82.0" prefWidth="52.0" style="-fx-alignment: center;" text="Id" />
+                  <TableColumn fx:id="company" maxWidth="207.0" prefWidth="157.0" style="-fx-alignment: center;" text="First name" />
+                  <TableColumn fx:id="field" maxWidth="183.0" prefWidth="107.0" style="-fx-alignment: center;" text="LastName" />
+                  <TableColumn fx:id="type" maxWidth="234.0" prefWidth="121.0" style="-fx-alignment: center;" text="Type" />
+                  <TableColumn fx:id="title" maxWidth="252.0" prefWidth="108.0" style="-fx-alignment: center;" text="Title" />
+                  <TableColumn fx:id="date" prefWidth="105.0" text="Date" />
+                  <TableColumn fx:id="description" prefWidth="184.0" text="Description" />
+                  <TableColumn fx:id="start_date" prefWidth="137.0" text="Answer" />
+                  <TableColumn fx:id="status" prefWidth="93.0" text="Status" />
+                  <TableColumn fx:id="actions" prefWidth="103.0" text="Actions" />
+               </columns>
+               <styleClass>
+                  <String fx:value="table-header" />
+                  <String fx:value="table-row" />
+               </styleClass>
+            </TableView>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

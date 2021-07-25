@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.jfoenix.controls.DatePicker?>-->
+<!--<?import com.jfoenix.controls.TextArea?>
+<?import com.jfoenix.controls.TextField?>-->
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="798.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjoutReclamationController">
+    <children>
+      <Label text="Add Internship Form" textFill="#f49b42">
+         <VBox.margin>
+            <Insets bottom="20.0" left="30.0" right="25.0" top="30.0" />
+         </VBox.margin>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="choix" prefWidth="125.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" />
+         </VBox.margin>
+      </ComboBox>
+      <Label text="Référence" textFill="#f49b42">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="tfRef" prefHeight="25.0" prefWidth="339.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Company" textFill="#f49b42">
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCompany" prefHeight="25.0" prefWidth="339.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin></TextField>
+      <Label text="Field" textFill="#f49b42">
+         <VBox.margin>
+            <Insets left="30.0" right="200.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="tfField" prefHeight="25.0" prefWidth="339.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Title" textFill="#f49b42">
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTitle" prefHeight="25.0" prefWidth="339.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Start Date" textFill="#f49b42">
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startDate" prefHeight="25.0" prefWidth="636.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </DatePicker>
+      <Label text="End Date" textFill="#f49b42">
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="endDate" prefHeight="25.0" prefWidth="636.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin>
+      </DatePicker>
+      <Label text="Description" textFill="#f49b42">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taDescription" prefHeight="55.0" prefWidth="402.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin>
+      </TextArea>
+      <Label text="Supervisor" textFill="#f49b42">
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfSupervisor" prefHeight="25.0" prefWidth="339.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Status" textFill="#f49b42">
+         <VBox.margin>
+            <Insets left="30.0" />
+         </VBox.margin>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfStatus" prefHeight="25.0" prefWidth="339.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="30.0" right="200.0" />
+         </VBox.margin>
+      </TextField>
+          <Button fx:id="ajout" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="167.0" styleClass="boutton" stylesheets="@utilisateur.css" text="Add" textFill="#fffffff8">
+              <VBox.margin>
+                  <Insets left="225.0" top="20.0" />
+              </VBox.margin>
+              <font>
+                  <Font name="Arial Bold" size="22.0" />
+              </font>
+          </Button>
+    </children>
+</VBox>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bp" prefHeight="367.0" prefWidth="654.0" styleClass="column-header" stylesheets="@recommendation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RecommendationController">
+   <center>
+      <AnchorPane prefHeight="350.0" prefWidth="654.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="ClaimsTable" prefHeight="507.0" prefWidth="1006.0" styleClass="d" stylesheets="@recommendation.css">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="72.0" text="Id" />
+                  <TableColumn fx:id="company" prefWidth="100.0" text="First  name" />
+                  <TableColumn fx:id="field" prefWidth="105.0" text="Last name" />
+                  <TableColumn fx:id="title" prefWidth="105.0" text="Title" />
+                  <TableColumn fx:id="date" prefWidth="115.0" text="Date" />
+                  <TableColumn fx:id="description" prefWidth="188.0" text="Description" />
+                  <TableColumn fx:id="start_date" prefWidth="167.0" text="Answer" />
+                  <TableColumn fx:id="status" prefWidth="87.0" text="Status" />
+                  <TableColumn fx:id="actions" prefWidth="66.0" text="Actions" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

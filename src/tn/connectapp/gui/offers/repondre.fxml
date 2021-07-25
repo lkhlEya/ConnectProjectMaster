@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.jfoenix.controls.DatePicker?>
+<?import com.jfoenix.controls.TextArea?>
+<?import com.jfoenix.controls.TextField?>
+<?import com.jensd.fx.glyphs.fontawesome.FontAwesomeIconView"?>-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RepondreController">
+   <children>
+      <Pane prefHeight="67.0" prefWidth="403.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+<!--            <FontAwesomeIconView glyphName="CHECK" layoutX="588.0" layoutY="36.0" onMouseClicked="#DoneStatu" size="30" />
+            <Label layoutX="575.0" layoutY="37.0" prefHeight="27.0" prefWidth="56.0" text="Done">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView glyphName="SPINNER" layoutX="497.0" layoutY="37.0" onMouseClicked="#InProgressStatu" size="30" text="" />-->
+            <Label layoutX="463.0" layoutY="40.0" text="Inprogress">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="17.0" text="Claim">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <HBox prefHeight="53.0" prefWidth="747.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+            <ComboBox fx:id="choix" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets left="150.0" top="10.0" />
+               </HBox.margin>
+            </ComboBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="46.0" prefWidth="783.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First name" wrappingWidth="122.13556671142578">
+               <HBox.margin>
+                  <Insets left="40.0" top="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="company" prefHeight="50.0" prefWidth="339.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="68.0" prefWidth="783.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last name" wrappingWidth="129.1134033203125">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="field" prefHeight="49.0" prefWidth="336.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="30.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="62.0" prefWidth="783.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Title" wrappingWidth="97.1134033203125">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="8.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="title" prefHeight="40.0" prefWidth="341.0">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="72.0" prefWidth="783.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date" wrappingWidth="97.1134033203125">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="40.0" top="20.0" />
+               </HBox.margin>
+            </Text>
+            <DatePicker fx:id="date" prefHeight="45.0" prefWidth="367.0">
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </DatePicker>
+         </children>
+      </HBox>
+      <HBox prefHeight="102.0" prefWidth="783.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description" wrappingWidth="146.6554718017578">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </HBox.margin>
+            </Text>
+            <TextArea fx:id="description" prefHeight="52.0" prefWidth="339.0">
+               <HBox.margin>
+                  <Insets bottom="50.0" left="20.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+      <HBox prefHeight="102.0" prefWidth="783.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Answer" wrappingWidth="146.6554718017578">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </HBox.margin>
+            </Text>
+            <TextArea fx:id="start_date" prefHeight="52.0" prefWidth="339.0">
+               <HBox.margin>
+                  <Insets bottom="50.0" left="20.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+      <VBox prefHeight="89.0" prefWidth="783.0">
+         <children>
+            <Button fx:id="ajout" mnemonicParsing="false" onAction="#save" prefHeight="51.0" prefWidth="166.0" styleClass="boutton" stylesheets="@repondre.css" text="save" textFill="#fffdfd">
+               <VBox.margin>
+                  <Insets left="250.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Arial Bold" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</VBox>
